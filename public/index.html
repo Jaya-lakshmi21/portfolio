@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jaya Lakshmi | Full Stack Developer</title>
@@ -12,6 +13,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body id="theme-body" class="bg-slate-900 text-white transition-colors duration-500">
@@ -36,7 +39,7 @@
        <a href="#skills" class="nav-link hover:text-teal-400 transition">Skills</a>
        <a href="#projects" class="nav-link hover:text-teal-400 transition">Projects</a>
        <a href="#contact" class="nav-link hover:text-teal-400 transition">Contact</a>
-       <button id="theme-toggle" class="ml-4 px-3 py-1 rounded bg-slate-700 text-sm">🌙</button>
+       <button id="theme-toggle" class="ml-4 px-3 py-1 rounded bg-slate-700 text-sm">☼</button>
 
       </div>
     </div>
@@ -86,13 +89,16 @@
           <div class="w-72 h-72 rounded-3xl bg-gradient-to-br from-teal-400 to-indigo-500 p-1 shadow-2xl">
             <!-- <div class="w-full h-full bg-slate-800 rounded-3xl flex items-center justify-center text-7xl font-bold text-teal-400">
               JL
-            </div> -->
+            </div>  -->
             <div class="relative flex justify-center">
               <div class="profile-card w-72 h-72 rounded-3xl p-[3px]">
                 <div class="w-full h-full bg-slate-900 rounded-3xl overflow-hidden">
+                  <div class="w-full h-full bg-slate-800 rounded-3xl flex items-center justify-center text-7xl font-bold text-teal-400">
+                    JL
+                  </div>
                   <!-- <img src="images/jaya.jpg"
                       alt="Jaya Lakshmi"
-                      class="w-full h-full object-cover rounded-3xl profile-img"> -->
+                      class="w-full h-full object-cover rounded-3xl profile-img"> -->                      
                 </div>
               </div>
             </div>
@@ -313,5 +319,29 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- SUCCESS MODAL -->
+  <div id="successModal" class="fixed inset-0 hidden items-center justify-center bg-black/60 backdrop-blur-sm z-50">
+    <div class="bg-slate-900 p-10 rounded-2xl text-center shadow-2xl scale-90 opacity-0 transition-all duration-500" id="successBox">
+
+      <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-teal-500 flex items-center justify-center animate-bounce">
+        <span class="text-3xl text-white">✓</span>
+      </div>
+
+      <h3 class="text-2xl font-bold text-teal-400 mb-2">
+        Thank You!
+      </h3>
+
+      <p class="text-slate-300 mb-6">
+        Your message has been submitted successfully.
+      </p>
+
+      <button id="closeSuccess"
+        class="bg-teal-400 text-slate-900 px-6 py-2 rounded-lg font-semibold hover:bg-teal-300 transition">
+        Close
+      </button>
+
+    </div>
+  </div>
+
 </body>
 </html>
